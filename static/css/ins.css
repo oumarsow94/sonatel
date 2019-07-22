@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+body {
+    background-image: url(/home/sow/Documents/bootstraps/dev.jpg);
+    background-size: 100% 700px;
+    background-repeat: no-repeat;
+}
+*/
+
+.o {
+    margin-top: 0;
+    background: #eff1f3;
+    width: 500px;
+    /*margin: 0px 0px 0px 430px;*/
+    color: black;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: -50%;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    border-top: 0%;
+}
+
+h2 {
+    text-align: center;
+    padding: 20px
+}
+
+
+/*
+.register {
+    background: #2d85b0;
+    width: 500px;
+    margin: 0px 0px 0px 430px;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 10px;
+}*/
+
+
+/*
+#ins {
+    margin-left: 50px;
+}
+*/
+
+label {
+    color: black;
+    font-size: 18px;
+    font-style: italic;
+}
+
+#name {
+    width: 300px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px
+}
+
+#male {
+    display: inline-block;
+}
+
+#ph {
+    width: 65px;
+    padding: 7px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+}
+
+#pr {
+    width: 300px;
+    padding: 7px;
+    color: black border: none;
+    border-radius: 3px;
+    outline: 0;
+}
+
+#num {
+    width: 240px;
+    padding: 7px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+}
+
+#btn {
+    width: 200px;
+    padding: 7px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    margin-top: 0%;
+}

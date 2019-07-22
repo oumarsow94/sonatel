@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/menu.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/ins.css')}}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row well">
+            <div class="col-md-3">
+
+                <img class="logo pull-left" src="../static/img/sonatel.gif" width="20%">
+
+            </div>
+            <div class="col-md-6">
+                <h1 class="text-center">Sonatel Academy</h1>
+            </div>
+            <div class="col-md-3">
+                <img class="ou pull-right" src="../static/img/ou.jpg " width="20% ">
+                <h4 class="nom pull-right"> Oumar</h4>
+                <h4><a href="/" class="pull-right">Deconnexion</a></h4>
+            </div>
+        </div>
+
+
+        <div class="container-fluid ">
+            <div class="row ">
+                <div class="col-md-2">
+
+                    <ul id="menu-accordeon" class="fixed-bottom">
+                        <li><a href="/test">Accueil</a>
+                            <li><a href="#">Scolarité</a>
+                                <ul>
+                                    <li><a href="/inscription">Inscription</a></li>
+                                    <li><a href="/modification">Modifier</a></li>
+                                    <li><a href="/annuler">Annuler</a></li>
+                                    <li><a href="/suspendre">Suspendre</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Referentiel</a>
+                                <ul>
+                                    <li><a href="/ref">Nouveau</a></li>
+                                    <li><a href="/referentiel">Modifier</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Promo</a>
+                                <ul>
+                                    <li><a href="/promo">Nouveau</a></li>
+                                    <li><a href="/promotion">Modifier</a></li>
+                                    <li><a href="/listpromotion">lister</a></li>
+
+                                </ul>
+                            </li>
+                    </ul>
+                    </nav>
+
+
+                </div>
+                <div class="col md-10">
+                    {% block body%} {% endblock%}
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="well">
+
+            <h3>Website:www.sonatelAcademy.sn
+                <span class=pull-right>Like Us:www.facebook.com</span>
+            </h3>
+
+        </div>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.js.1.14.7/umd/pooper.min.js"></script>
+<script src="https://stakpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script> -->
+
+<script type="text/javascript" src="{{url_for('static', filename='js/jquery-3.2.1.min.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+
+</html>

@@ -1,0 +1,79 @@
+{% extends 'test.html' %}
+<!--  
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/ins.css')}}">
+</head>
+
+
+<body>
+-->
+
+<div class="container">
+    <div class="row">
+        {% block body %}
+        <!-- <div class="col-md-0"></div> -->
+        <div class="col-md-5">
+
+            <form method="POST" class="well " action="">
+                <h2>Resister Here</h2>
+
+                <label>Matricule</label><br>
+                <input type="text" name="Mat" id="name" placeholder=""><br><br>
+
+                <label>First name</label><br>
+                <input type="text" name="Fname" id="name" placeholder=""><br><br>
+
+                <label>Last name</label><br>
+                <input type="text" name="Lname" id="name" placeholder=""><br><br>
+
+                <label>Date de naissance</label><br>
+                <input type="date" name="naissance" id="num" placeholder=""><br><br>
+
+                <label>Telephone</label><br>
+                <select id="ph" name="">
+                        <option>+220</option>
+                        <option>+221</option>
+                        <option>+222</option>
+                        <option>+223</option>
+                        </select>
+                <input type="number" name="MNum" id="num" placeholder=""><br><br>
+
+                <label>Email</label><br>
+                <input type="email" name="email" id="name" placeholder=""><br><br>
+
+                <label>Promotion</label><br>
+                <select id="name" name="promo">
+                    {% for i in student %} 
+                        <option value="{{i[0]}}">{{i[1]}}</option><br><br>
+                    {% endfor %} 
+                </select>
+                <!--<input type="number" name="promo" id="num" placeholder=""><br><br>-->
+
+
+
+                <button class="btn btn-primary" type="submit">Insert Data</button>
+
+
+            </form>
+
+
+        </div>
+        <div class="col-md-3"></div>
+        {% endblock %}
+    </div>
+</div>
+
+<!-- 
+</body>
+
+
+</html>-->

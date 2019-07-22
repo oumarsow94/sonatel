@@ -1,0 +1,34 @@
+{% extends 'test.html' %} {% block body %}
+<div class="col-md-8 pull-right"></div>
+<table class="table table-striped">
+    <tr>
+        <th>Serial</th>
+        <th>Prenom</th>
+        <th>Nom</th>
+        <th>Telephone</th>
+        <th>Email</th>
+        <th>Promo</th>
+        <th>Ref</th>
+        <th>Action</th>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td>oumar</td>
+        <td>sow</td>
+        <td>770104432</td>
+        <td>sowsogm@gmail.com</td>
+        <td>Astou Ndiaye</td>
+        <td>Data Artisan</td>
+
+
+        <td>
+            <a href="" class="btn btn-danger btn-xs" onclick="return confirm('Are You Sure To delete?')">delete</a>
+        
+        </td>
+
+    </tr>
+</table>
+</div>
+
+{% endblock %}

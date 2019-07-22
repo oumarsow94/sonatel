@@ -1,0 +1,76 @@
+{% extends 'test.html' %}
+<!--  
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/ins.css')}}">
+</head>
+
+
+<body>
+-->
+
+<div class="container">
+    <div class="row">
+        {% block body %}
+        {% for i in students %}
+        <!-- <div class="col-md-0"></div> -->
+        <div  id="modalEdit{{i[0]}}" class="col-md-5">
+            {% for i in students %}
+            <form method="POST" class="well " action="{{ url_for('/modification/modifier/update') }}">
+                <h2>Resister Here</h2>
+
+                <label>Matricule</label><br>
+                <input type="hidden" name="id" value="{{i[0]}}">
+                <input type="text" name="Mat" id="name" value="{{i[1]}}"><br><br>
+
+                <label>First name</label><br>
+                <input type="text" name="Fname" id="name" value="{{i[2]}}"><br><br>
+
+                <label>Last name</label><br>
+                <input type="text" name="Lname" id="name" value="{{i[3]}}"><br><br>
+
+                <label>Date de naissance</label><br>
+                <input type="date" name="naissance" id="num" value="{{i[4]}}"><br><br>
+
+                <label>Telephone</label><br>
+                <select id="ph" name="">
+                        <option>+220</option>
+                        <option>+221</option>
+                        <option>+222</option>
+                        <option>+223</option>
+                        </select>
+                <input type="number" name="MNum" id="num" value="{{i[5]}}"><br><br>
+
+                <label>Email</label><br>
+                <input type="email" name="email" id="name" value="{{i[6]}}"><br><br>
+
+                <label>Promotion</label><br>
+                <input type="number" name="promo" id="num" value="{{i[7]}}"><br><br>
+
+
+
+                <button class="btn btn-primary" type="submit">Update Data</button>
+
+
+            </form>
+            {% endfor %}
+
+        </div>
+        <div class="col-md-3"></div>
+        {% endblock %}
+    </div>
+</div>
+
+<!-- 
+</body>
+
+
+</html>-->

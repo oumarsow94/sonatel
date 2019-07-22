@@ -1,0 +1,30 @@
+{% extends 'test.html' %}
+
+{% block body %}
+        <!-- <div class="col-md-0"></div> -->
+<div class="col-md-5">
+
+    <form method="POST" class="well " action="">
+        <h2>Add Promo</h2>
+        <label>Promo</label><br>
+        <input type="text" name="promo" id="name" placeholder=""><br><br>
+        
+        <label>Date Debut</label><br>
+        <input type="text" name="ddate" id="num" placeholder=""><br><br>
+
+        <label>Date Fin</label><br>
+        <input type="text" name="fdate" id="num" placeholder=""><br><br>
+
+        <label>Referentiel</label><br>
+        <input type="text" name="ref" id="name" placeholder=""><br><br>
+
+        <button class="btn btn-primary" type="submit">Insert Data</button>
+
+
+    </form>
+
+
+</div>
+<div class="col-md-3"></div>
+{% endblock %}
+

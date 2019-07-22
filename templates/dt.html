@@ -1,0 +1,69 @@
+{% extends 'test.html' %} {% block body %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+
+
+<h1 class="title">Nombre d'employés</h1>
+<div class="container mb-5 mt-3">
+    <table id="DataTable" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>Matricule</th>
+                <th>Prenom</th>
+                <th>Nom</th>
+                <th>Date de naissance</th>
+                <th>Telephone</th>
+                <th>Email</th>
+                <th>Statut</th>
+                <th>Promo</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in students %}
+            <tr>
+                <td>{{i[0]}}</td>
+                <td>{{i[1]}}</td>
+                <td>{{i[2]}}</td>
+                <td>{{i[3]}}</td>
+                <td>{{i[4]}}</td>
+                <td>{{i[5]}}</td>
+                <td>{{i[6]}}</td>
+                <td>{{i[7]}}</td>
+                <td>{{i[8]}}</td>
+            </tr>
+
+
+            {% endfor %}
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+
+<!-- <style>
+    .title {
+        text-align: center;
+    }
+    
+    .container {
+        padding: 20px;
+    }
+</style> -->
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.js.1.14.7/umd/pooper.min.js"></script>
+<script src="https://stakpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#tableDataTable').DataTable({});
+    });
+</script>
+
+{% endblock %}
