@@ -10,7 +10,7 @@ enum34==1.1.6
 html5lib==0.999999999
 idna==2.6
 ipaddress==1.0.17
-Jinja2==2.10
+Jinja2==2.11.3
 keyring==10.6.0
 keyrings.alt==3.0
 lava-tool==0.24
