@@ -14,7 +14,7 @@ Jinja2==2.10
 keyring==10.6.0
 keyrings.alt==3.0
 lava-tool==0.24
-lxml==4.2.1
+lxml==4.9.1
 MarkupSafe==1.0
 matplotlib==2.1.1
 mysql-connector-python==2.1.6
